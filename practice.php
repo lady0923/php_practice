@@ -194,11 +194,40 @@ echo "\n";
 //三項演算
 
 
-
-
+echo "\n";
 
 // 課題1
 $a = 3;
 $b = 7;
 echo $a + $b;
 
+echo "\n";
+
+//課題2
+$array_month = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"];
+echo $array_month[7];
+
+echo "\n";
+
+//課題3
+$hello = "Hello,";
+$name = "saki";
+$world = "'s world!";
+echo $hello . $name . $world;
+
+echo "\n";
+
+//課題4
+$tech_boost = "tech";
+$tech_boost .= " boost";
+echo $tech_boost;
+
+echo "\n";
+
+//課題5
+//変数名の始めが数字
+//{}ではなく[]で囲む
+//誤："February" => "２月"、　正："February" => "２月",
+//誤；"June" = "６月",　正："June" => "６月",
+//誤："October" = １０月, 正："October" = "１０月",
+//誤：echo $2018_calender[December]; 正：echo $2018_calender["December"];
