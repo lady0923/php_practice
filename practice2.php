@@ -82,3 +82,103 @@ switch ($weekday) {
 echo "\n";
 
 // さまざまな条件の比較
+
+$a = 3;
+$b = 3;
+$c = "3";
+
+// $aと$bが正しいときにtrue、そうでなければfalse
+var_dump($a == $b);
+// =>bool(true)が表示される
+
+// $aと＄bが等しくないときにtrue
+var_dump($a != $b);
+// =>bool(false)が表示される
+
+// $aが$bより大きいときにtrue、そうでなければfalse
+var_dump($a > $b);
+// =>bool(false)が表示される
+
+// $aが$b以上のときtrue、そうでなければfalse
+var_dump($a >= $b);
+// =>bool(true)が表示される
+
+// $aが$bより小さいときtrue、そうでなければfalse
+var_dump($a < $b);
+// bool(false)が表示される
+
+// $aが$bより小さいか、または等しいときにtrue、そうでなければfalse
+var_dump($a <= $b);
+// bool(true)が表示される
+
+// $aが$cとデータ型が等しく、かつ値も等しいときにtrue、そうでなければfalse
+var_dump($a === $c);
+// =>bool(false)が表示される
+
+// $aと$cがデータ型が等しくないか、もしくは値が等しくないときにtrue、そうでなければfalse
+var_dump($a !== $c);
+// =>bool(true)が表示される
+
+// for文
+// for(カウンター変数の初期化; ループを続ける条件; 条件の変化指定);{
+//  要素一つに対して実行したい処理 
+//  }
+
+// $iは０から始まり、$iが10未満になるまで$iに1足し続ける
+for($i = 0; $i < 10; $i++) {
+    echo $i;
+}
+// =>0123456789が表示される
+
+echo "\n";
+
+// 1~100までを繰り返し処理で足す
+$total = 0;
+echo $total;
+// =>0と表示される
+
+echo "\n";
+
+for($i =1; $i <=100; $i++) {
+    $total += $i;
+}
+echo $total;
+// =>5050と表示される
+
+echo "\n";
+
+//　配列のすべての要素を出力
+$fruits = array("apple", "orange", "lemon");
+echo count($fruits);
+// =>3と表示される
+
+echo "\n";
+
+for($i = 0; $i < count($fruits); $i++) {
+echo "要素は" .$fruits[$i];
+echo "\n";
+}
+// =>要素はapple
+// =>要素はorange
+// =>要素はlemon
+// =>と表示される
+
+// foreach文
+// 配列の要素を順番に処理するための構文
+// toreach(配列 as 一時変数) {
+// 要素ひとつに対して実行したい処理
+//  }
+
+//$animalsから一つずつ要素を取り出して、$animalに代入する
+$animals = array("dog", "cat", "panda");
+
+foreach($animals as $animal) {
+    echo "要素は" .$animal;
+    echo "\n";
+}
+// =>要素はdog
+// =>要素はcat
+// =>要素はpanda
+// =>と表示される
+
+// 課題1
