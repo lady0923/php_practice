@@ -182,3 +182,49 @@ foreach($animals as $animal) {
 // =>と表示される
 
 // 課題1
+
+$name = "三木彩貴";
+if ($name = "三木彩貴") {
+    echo "私は三木彩貴です。";
+} else {
+    echo "私は三木彩貴ではありません。";
+}
+
+echo "\n";
+
+// 課題2
+
+$total = 0;
+echo $total;
+
+echo "\n";
+
+for($i = 0; $i <=10000; $i++) {
+    $total += $i;
+}
+echo $total;
+
+echo "\n";
+
+// 課題3
+
+$fruits = array("strawberry", "banana", "lemon", "orange", "kiwi");
+foreach ($fruits as $fruit) {
+    echo "要素は" . $fruit;
+    echo "\n";
+}
+
+echo "\n";
+
+// 課題4
+
+$i = 0;
+echo $i;
+
+echo "\n";
+
+for ($i = 0; $i<=100; $i++) {
+    if ($i % 5 == 0) {
+        echo $i;
+    }
+}
