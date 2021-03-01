@@ -46,16 +46,25 @@ print_r($array);
 ?>
 
 // 課題1
+// 引数に数値を指定して実行すると、数値を2倍にして返す関数を作成してください
 
 <?php
 function double($x) {
-    $result = 0;
-    for($i = 1; $i <= $x; $i++) {
-    $result = $x * 2;
-}
-return $result;
+    return $x * 2;
 }
 echo double(5);
 ?>
 
 // 課題2
+// $aと$bを仮引数に持ち、$aと$bを足した結果を返す関数を作成してください
+
+<?php
+function f($a, $b) {
+    return $a + $b;
+}
+echo f(2,5);
+?>
+
+// 課題3
+// $arrという配列の仮引数を持ち、数値が入った配列$array(1,3,5,7,9)を渡すとその要素をすべてかけた結果を返す関数を作成してください
+
